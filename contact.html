@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+    <link rel="shortcut icon" href="images/favicon.png">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Skranji&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans&display=swap" rel="stylesheet">
+    <!-- Social Links -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/mystyle.css">
+</head>
+
+<body>
+    <!-- Banner -->
+    <img src="./images/bannerWeb.png" width="100%" alt="banner of Lochquarry Outdoor Centre">
+
+
+    <!-- Navbar -->
+    <nav role="navigation" aria-label="main menu">
+        <ul class="navbar">
+            <ul class="navbar">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="water.html">Water Activities</a></li>
+                <li><a href="land.html">Land Activities</a></li>
+                <li><a href="rope.html">Rope Activities</a></li>
+                <li><a class="active" href="contact.html">Contact</a></li>
+            </ul>
+    </nav>
+
+    <!-- Main page -->
+    <main class="container-page background-image">
+        <div class="info-text">
+            <div class="container-contact">
+                <div class="row">
+                    <div class="col-6">
+
+                        <div class="bg-text">
+                            <iframe id="map"
+                                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d283397.19489452615!2d-5.500649127049087!3d56.29461221472897!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x48891340b589052d%3A0x80cff911f018a91d!2sLoch%20Awe!5e0!3m2!1sit!2suk!4v1647216625040!5m2!1sit!2suk"
+                                width="600" height="450" style="border: solid 1px black;" allowfullscreen=""
+                                loading="lazy"></iframe>
+
+                        </div>
+
+                        <br>
+
+                        <div class="bg-text">
+                            <h2> <span aria-hidden="true">&#9753;</span>Where to Find Us<span
+                                    aria-hidden="true">&#10087;</span></h2>
+                            <p class="contact-info">
+                                If you wish to get in touch with us, please use the appropriate contact info below.
+                                <br> <span aria-hidden="true">&#128383;</span>
+                                Phone 01475 229 8311 <br> <span aria-hidden="true">&#9993;</span> E-mail <a
+                                    href="mailto:example@example.co.uk">example@example.co.uk</a>.<br>
+                                Or complete our form to book your next adventure!
+                            </p>
+                        </div>
+                    </div>
+
+                    <!--Form -->
+                    <div class="col-6">
+                        <div>
+                            <div class="bg-text">
+
+                                <h2> <span aria-hidden="true">&#9753;</span>Book Today!<span
+                                        aria-hidden="true">&#10087;</span></h2>
+
+                                <form action="/">
+
+                                    <div class="form-item">
+                                        <label for="name">Name</label> <br>
+                                        <input type="text" id="name" required placeholder="John"
+                                            aria-label="Type your name here">
+                                    </div>
+
+                                    <div class="form-item">
+                                        <label for="name">Surname</label> <br>
+                                        <input type="text" id="name" required placeholder="Smith"
+                                            aria-label="Type your surname here">
+                                    </div>
+
+                                    <div class="form-item">
+                                        <label for="email">E-mail</label> <br>
+                                        <input type="email" id="email" required placeholder="example@example.co.uk"
+                                            aria-label="Type your e-mail here">
+                                    </div>
+
+                                    <div class="form-item">
+                                        <label for="phone">Phone Number</label> <br>
+                                        <input type="text" id="phone" placeholder="1234456789"
+                                            aria-label="Type your phone number here">
+                                    </div>
+
+                                    <div class="form-item">
+                                        <label for="date">When are you planning to visit?</label> <br>
+                                        <input type="date" name="date" required />
+                                    </div>
+
+                                    <div class="form-item">
+                                        <label for="number">How many people are in your group?</label> <br>
+                                        <input type="number" id="number" min="1" max="10" name="party" required
+                                            aria-label="Type the number of people in your party here" />
+                                    </div>
+
+                                    <div class="form-item">
+                                        <label for="activities">Which activities are you most interested in?</label>
+                                        <br>
+                                        <select id="activities" name="activities"
+                                            aria-label="select the activity you would like to experience">
+                                            <option value="water">Water Activities</option>
+                                            <option value="land">Land Activities</option>
+                                            <option value="rope">Rope Activities</option>
+                                        </select>
+                                    </div>
+
+                                    <div class="form-item">
+                                        <label for="comment">Any special request?</p>
+                                            <textarea rows="5" id="comment" name="comment" rows="4" cols="63"
+                                                placeholder="Type your message here..."
+                                                aria-label="write your comment in the box"></textarea>
+                                    </div>
+
+                                    <div class="btn-block">
+                                        <button type="submit">Book Now</button>
+                                    </div>
+
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+
+                    </form>
+
+                </div>
+
+            </div>
+
+    </main>
+
+    <!-- Footer -->
+    <footer aria-label="Footer">
+        <div class="social-links">
+            <a href="#" class="fa fa-facebook" aria-label="Facebook"></a>
+            <a href="#" class="fa fa-twitter" aria-label="Twitter"></a>
+            <a href="#" class="fa fa-linkedin" aria-label="LinkedIn"></a>
+            <a href="#" class="fa fa-youtube" aria-label="YouTube"></a>
+            <a href="#" class="fa fa-tripadvisor" aria-label="Tripadvisor"></a>
+        </div>
+        Lochquarry Outdoor Centre <span aria-hidden="true">&#169;2022</span>
+    </footer>
+
+</body>
+
+
+
+</html>

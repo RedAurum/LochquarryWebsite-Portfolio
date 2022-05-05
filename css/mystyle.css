@@ -1,0 +1,612 @@
+/*
+***
+* CSS for Lochquarry Oudoor Centre
+* Project by Laura Balestrieri
+* EC2111796
+***
+*/
+
+/* CSS HEX Palette Base
+$burlywood: #DCB888ff;
+$dark-lava: #564B3Eff;
+$seal-brown: #572C12ff;  */
+
+/* 
+*  CSS TABLE OF CONTENTS
+*   
+*  ALL PAGES
+    1.0 - Html, body, p, headings
+    2.0 - Background text and images
+*    NAVBAR
+    3.0 - Navigation bar
+*    HOMEPAGE
+    4.0 - Homepage background
+*    ABOUT
+    5.0 - Polaroid
+    6.0 - Staff Card
+    7.0 - Visitors Comments
+*   ACTIVITIES
+    8.0 - Background Activities Text and Images
+*   CONTACT
+    9.0 - Contact Page and Form
+*   FOOTER
+    10.0 - Footer and Social Links
+        
+*/
+
+
+/*** 1.0 - Html, body, p, headings ***/
+
+html,
+body {
+
+
+    width: 100%;
+    height: 100%;
+    margin: 0px;
+    padding: 0px;
+    overflow-x: hidden;
+    font-family: 'Nunito Sans', sans-serif;
+    background-color: #DCB888ff;
+
+}
+
+p {
+
+    font-size: 15pt;
+
+}
+
+h1,
+h2 {
+
+    text-transform: capitalize;
+    font-family: 'Skranji', cursive;
+    font-size: 3.0rem;
+    text-shadow: 4px 4px 10px white;
+}
+
+.bgr-heading>h2:not(.about),
+h3,
+h4 {
+
+    text-transform: capitalize;
+    font-family: 'Skranji', cursive;
+    font-size: 1.5rem;
+
+}
+
+
+/*  Main info text  */
+
+.info-text {
+
+    padding: 1.3em;
+    text-align: center;
+
+}
+
+/*** 2.0 - Background text and images ***/
+
+.bg-text {
+
+    background-color: #e7e6e1d6;
+    padding: 1.8em;
+    text-align: center;
+    border: 1px solid;
+    border-radius: 15px 50px;
+
+}
+
+
+/*  Fixed Background images for About and Activities */
+
+/* Background for Activities */
+
+.bgr-fixed {
+
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-image: url(/images/land_bgr_edit.jpg);
+
+}
+
+/* Background for About */
+
+#bgr-about {
+
+    background-image: url(/images/landscape_03_edit.jpg);
+
+}
+
+
+/*  Link effects */
+
+.bg-text>a {
+
+    color: #000;
+    text-decoration: none;
+    font-size: 15pt;
+
+}
+
+.bg-text>a:hover {
+
+    color: #bb0000;
+    text-decoration: underline;
+
+}
+
+
+/* Breaks icons */
+
+
+.break-icon {
+
+    font-size: 25pt;
+    font-weight: 400;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 45px;
+    margin-bottom: 45px;
+
+}
+
+/*** 3.0 - Navigation bar ***/
+
+nav {
+
+    position: sticky;
+    background-color: #572C12ff;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    width: 100%;
+    padding: 15px;
+    z-index: 10;
+    margin-top: -6px;
+}
+
+.navbar {
+
+    text-align: center;
+    padding-right: 100px;
+    margin: 0;
+}
+
+.navbar li {
+
+    display: inline;
+
+}
+
+/*  Navbar effects  */
+
+.navbar a,
+.navbar span {
+
+    color: white;
+    text-decoration: none;
+    padding: 15px;
+
+}
+
+.navbar a:hover,
+.navbar span:hover {
+
+    color: white;
+    background-color: #564B3Eff;
+
+}
+
+.active {
+
+    color: white;
+    background-color: #564B3Eff;
+
+}
+
+/*** 4.0 - Homepage background ***/
+
+.background-image {
+
+    background-image: url(/images/landscape_01_edit.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 115%;
+
+}
+
+
+/*  About Page */
+
+/*** 5.0 - Polaroid ***/
+/* Polaroid wrapper */
+
+.wrapper {
+
+    width: 100%;
+    padding: 0 2rem;
+    text-align: center;
+}
+
+/* Polaroid pictures effect around the pictures*/
+
+.polaroid {
+
+    background: #fff;
+    padding: 1rem;
+    box-shadow: 0 0.2rem 1.2rem rgba(0, 0, 0, 0.2);
+
+}
+
+/* Polaroid pictures responsive */
+
+.polaroid>img {
+
+    max-width: 100%;
+    height: auto;
+
+}
+
+/* Caption under the pictures*/
+
+.polaroid-caption {
+
+    font-size: 1.8rem;
+    text-align: center;
+    line-height: 2em;
+    font-family: 'Nunito Sans', sans-serif;
+
+}
+
+/* Pictures position and rotation */
+
+/* First row */
+
+.item-right {
+
+    width: 30%;
+    display: inline-block;
+    margin-top: 2rem;
+    transform: scale(0.8, 0.8) rotate(5deg);
+
+}
+
+/* Second row */
+
+.item-left {
+
+    width: 30%;
+    display: inline-block;
+    margin-top: 2rem;
+    transform: scale(0.8, 0.8) rotate(-5deg);
+
+}
+
+/*** 6.0 - Staff card ***/
+
+.text-card {
+
+    text-align: left;
+    line-height: 1.6;
+    padding-left: 2%;
+    padding-bottom: 3%;
+
+}
+
+.name-heading {
+
+    text-align: center;
+    margin: 10px 0px 10px 0px;
+
+}
+
+.card {
+
+    background-color: #e7e6e1d6;
+    border-radius: 15px;
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+
+}
+
+/* Card position and rounded effect for each staff member */
+
+.img-staff {
+
+    border-radius: 15px 15px 0 0;
+
+}
+
+
+.row {
+
+    display: flex;
+    flex-wrap: wrap;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+
+.col-3 {
+
+    float: left;
+    width: 30%;
+}
+
+
+/* Padding between each staff card */
+
+
+.row,
+.row>.col-3 {
+
+    padding: 8px;
+    margin: 8px;
+}
+
+/*** 7.0 - Visitors Comments ***/
+
+.ul-visitors {
+
+    list-style-type: none;
+
+}
+
+.ul-visitors li {
+
+    font-size: 16pt;
+    padding: 10px;
+
+}
+
+.ul-visitors li:before {
+
+    content: '\01F65E';
+    margin-left: -20px;
+    margin-right: 10px;
+
+}
+
+
+/*  Activities Page */
+
+/*** 8.0 - Background Activities Text and Images ***/
+
+.bgr-heading {
+
+    background-color: #e7e6e1d6;
+    border: 1px solid;
+    border-radius: 15px 50px;
+    margin: 0px 500px 0px 500px;
+    padding: 15px;
+
+}
+
+/*  Responsive images and border in activities */
+
+.activity-img {
+
+    max-width: 100%;
+    height: auto;
+    border: 1px solid;
+    border-radius: 50% 20% / 10% 40%;
+    box-shadow: 0 0.2rem 1.2rem rgba(0, 0, 0, 0.2);
+}
+
+
+/*  Margins for the images in activities left and right */
+
+.activity-img-left {
+
+    margin: 0px 10px 0px 10px;
+
+}
+
+.activity-img-right {
+
+    margin: 0px 10px 0px -10px;
+
+}
+
+
+/*** 9.0 - Contact Page and Form ***/
+
+/*  Contact Page */
+
+.container-page {
+
+    height: 120%;
+
+}
+
+.container-contact {
+
+    margin-left: 10px;
+    box-sizing: border-box;
+
+}
+
+.row {
+
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 100px;
+
+}
+
+.col-6 {
+
+    margin: 45px 10px 10px 5px;
+    width: 48.9%;
+    height: 500px;
+    box-sizing: border-box;
+    text-align: center;
+
+}
+
+
+.contact-info {
+
+    text-align: left;
+    line-height: 1.8;
+    padding-left: 20px;
+
+}
+
+/* Margin for embedded Google Map */
+
+#map {
+
+    margin-bottom: 10px;
+    box-shadow: 0 0.2rem 1.2rem rgba(0, 0, 0, 0.2);
+
+}
+
+
+/*  Form */
+
+
+.form-item {
+
+    font-size: 15pt;
+    margin-top: 3px;
+    text-align: center;
+
+}
+
+input,
+select {
+
+    width: 33%;
+    padding: 6px 10px;
+    margin: 6px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+select {
+
+    margin-top: 3px;
+    font-size: 13pt;
+
+}
+
+
+textarea {
+
+    resize: none;
+
+}
+
+
+/*  Button Style */
+
+button {
+
+    background-color: #BE6532;
+    border: none;
+    border-bottom: solid black 1px;
+    border-radius: 4px;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    transition-duration: 0.3s;
+    cursor: pointer;
+    margin-top: 15px;
+
+}
+
+button:hover {
+
+    box-shadow: 0 6px 8px 0 rgba(0, 0, 0, 0.24), 0 8px 25px 0 rgba(0, 0, 0, 0.19);
+}
+
+
+
+/*** 10.0 - Footer and social links ***/
+
+footer {
+
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    color: white;
+    text-align: center;
+    background-color: #572C12ff;
+    box-shadow: 0px 0px 16px 8px rgba(0, 0, 0, 0.2);
+}
+
+
+/* Social Links */
+
+.social-links {
+
+    padding: 8px 0px 8px 0px;
+
+}
+
+.fa {
+
+    padding: 10px;
+    font-size: 15px;
+    width: 18px;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 50%;
+}
+
+.fa:hover {
+
+    opacity: 0.7;
+}
+
+
+/* Facebook */
+
+.fa-facebook {
+
+    background: #3B5998;
+    color: white;
+}
+
+/* Twitter */
+
+.fa-twitter {
+
+    background: #55ACEE;
+    color: white;
+}
+
+/* Linkedin */
+
+.fa-linkedin {
+
+    background: #007bb5;
+    color: white;
+
+}
+
+/* YouTube */
+
+.fa-youtube {
+
+    background: #bb0000;
+    color: white;
+
+}
+
+/* Tripadvisor */
+
+.fa-tripadvisor {
+
+    background: #34E0A1;
+    color: black;
+    text-align: center;
+
+}
